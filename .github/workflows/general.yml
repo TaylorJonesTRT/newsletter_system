@@ -20,6 +20,8 @@ env:
 jobs:
   # Unique identifier of our job (`job_id`)
   test:
+    env:
+      DATABASE_URL: postgres://postgres:password@localhost:5432/newsletter
     # Sets the name `Test` for the job, which is displayed in the GitHub UI
     name: Test
     # Containers must run in Linux based operating systems
